@@ -138,11 +138,13 @@ ad9241de46b0   laravel-app        Up 50s          0.0.0.0:8080->80/tcp
 a5729552665f   mysql:5.7          Up 10m          3306/tcp, 33060/tcp
 ```
 
-4. **Criar projeto Laravel dentro de `src`**
+4. **Criar projeto Laravel dentro do `container`**
 
 ```bash
-cd src
+docker exec -it laravel-app bash
+cd /var/www/html
 composer create-project laravel/laravel .
+
 ```
 
 ⚠️ Dica: Se houver problemas de permissão:
